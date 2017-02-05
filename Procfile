@@ -1,1 +1,1 @@
-web: cd heroku ; npm install ; node main
+web: node heroku/main
