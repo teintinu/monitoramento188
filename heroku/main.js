@@ -38,8 +38,8 @@ socket.on('error', socket_error);
 socket.on('connect_error', socket_error);
 
 setTimeout(socket_lista_checked, 1000);
-setInterval(notificar_postos_offline, 6000);
-setInterval(gravar_no_firebase, 6000);
+setInterval(notificar_postos_offline, 30000);
+setInterval(gravar_no_firebase, 30000);
 
 express.get('/online.json', function (req, res) {
     firebase.database().ref('/notif/online').once('value', function (v) {
